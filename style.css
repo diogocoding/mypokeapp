@@ -1,11 +1,8 @@
-/* Importação de fontes (já no HTML, mas bom para ter aqui como referência) */
-/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap'); */
 
 :root {
-    /* Cores principais */
-    --primary-color: #ffcb05; /* Amarelo Pikachu */
-    --secondary-color: #3d79bc; /* Azul Pokémon */
-    --accent-color: #cc0000; /* Vermelho Pokébola */
+    --primary-color: #ffcb05;
+    --secondary-color: #3d79bc; 
+    --accent-color: #cc0000; 
     --text-dark: #222;
     --text-light: #f8f8f8;
     --background-light: #e0e0e0;
@@ -15,18 +12,18 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, #1a4f8b 100%); /* Gradiente azul escuro */
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #1a4f8b 100%);
     color: var(--text-dark);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    overflow: hidden; /* Para garantir que o padrão de fundo não cause scroll */
-    position: relative; /* Para o background-pattern */
+    overflow: hidden; 
+    position: relative;
 }
 
-/* Padrão de fundo visual */
+
 .background-pattern {
     position: absolute;
     top: 0;
@@ -50,9 +47,9 @@ body {
     text-align: center;
     width: 90%;
     max-width: 550px;
-    position: relative; /* Para ficar acima do background-pattern */
+    position: relative;
     z-index: 1;
-    border: 3px solid var(--primary-color); /* Borda amarela */
+    border: 3px solid var(--primary-color); 
     box-sizing: border-box;
 }
 
@@ -65,38 +62,38 @@ body {
 }
 
 .header-section h1 {
-    font-family: 'Press Start 2P', cursive; /* Fonte pixelada */
-    color: var(--accent-color); /* Vermelho Pokébola */
+    font-family: 'Press Start 2P', cursive; 
+    color: var(--accent-color); 
     margin: 0;
     font-size: 1.8rem;
-    text-shadow: 3px 3px 0px var(--text-dark); /* Sombra para o texto */
+    text-shadow: 3px 3px 0px var(--text-dark);
     letter-spacing: 2px;
 }
 
 .pokemon-icon {
     width: 50px;
     height: 50px;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5)); /* Sombra para os ícones */
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
 }
 
 .search-box {
     margin: 1.5rem 0;
     display: flex;
     gap: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para a caixa de busca */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden; /* Para a borda arredondada */
+    overflow: hidden;
 }
 
 #pokemonName {
     flex-grow: 1;
     padding: 1rem;
-    border: none; /* Remove a borda padrão */
+    border: none;
     background-color: var(--background-light);
-    border-radius: 8px 0 0 8px; /* Bordas arredondadas só de um lado */
+    border-radius: 8px 0 0 8px;
     font-size: 1.1rem;
     color: var(--text-dark);
-    outline: none; /* Remove outline ao focar */
+    outline: none;
 }
 
 #pokemonName::placeholder {
@@ -107,9 +104,9 @@ body {
 #searchButton {
     padding: 1rem 1.8rem;
     border: none;
-    background-color: var(--accent-color); /* Vermelho Pokébola */
+    background-color: var(--accent-color);
     color: var(--text-light);
-    border-radius: 0 8px 8px 0; /* Bordas arredondadas só de um lado */
+    border-radius: 0 8px 8px 0; 
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
@@ -119,24 +116,24 @@ body {
 }
 
 #searchButton:hover {
-    background-color: #a30000; /* Um vermelho um pouco mais escuro */
-    transform: translateY(-2px); /* Efeito de "pular" */
+    background-color: #a30000; 
+    transform: translateY(-2px); 
 }
 
 #searchButton:active {
-    transform: translateY(0); /* Efeito de "clique" */
+    transform: translateY(0); 
 }
 
 .pokemon-card {
     margin-top: 2rem;
     padding: 1.5rem;
-    background: linear-gradient(145deg, #f0f0f0, #ffffff); /* Gradiente suave para o card */
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    border: 2px solid var(--secondary-color); /* Borda azul */
+    border: 2px solid var(--secondary-color);
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transição mais suave */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .pokemon-card.visible {
@@ -145,15 +142,15 @@ body {
 }
 
 .pokemon-card img {
-    width: 180px; /* Tamanho maior para a imagem */
+    width: 180px;
     height: 180px;
     background-color: var(--background-light);
     border-radius: 50%;
-    border: 5px solid var(--primary-color); /* Borda amarela na imagem */
-    object-fit: contain; /* Garante que a imagem se ajuste */
+    border: 5px solid var(--primary-color); 
+    object-fit: contain;
     padding: 5px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    animation: pulse 1.5s infinite alternate; /* Animação sutil de pulso */
+    animation: pulse 1.5s infinite alternate;
 }
 
 .pokemon-card h2 {
@@ -181,7 +178,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Animação para a imagem do Pokémon */
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -191,7 +188,7 @@ body {
     }
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 600px) {
     .container {
         padding: 1.5rem;
@@ -208,7 +205,7 @@ body {
         gap: 8px;
     }
     #pokemonName, #searchButton {
-        border-radius: 8px; /* Arredonda tudo em mobile */
+        border-radius: 8px;
         width: 100%;
     }
     #searchButton {
