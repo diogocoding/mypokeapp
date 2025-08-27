@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de Pokémon</title>
+    <title>⚡️ PokéBuscador ⚡️</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Buscador de Pokémon</h1>
+    <div class="background-pattern"></div> <div class="container">
+        <div class="header-section">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu icon" class="pokemon-icon">
+            <h1>PokéBuscador</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard icon" class="pokemon-icon">
+        </div>
         <div class="search-box">
-            <input type="text" id="pokemonName" placeholder="Digite o nome de um Pokémon">
-            <button id="searchButton">Buscar</button>
+            <input type="text" id="pokemonName" placeholder="Ex: pikachu, charmander...">
+            <button id="searchButton">GO!</button>
         </div>
         <div id="result" class="pokemon-card">
-            </div>
+            <p class="placeholder-text">🔍 Digite o nome de um Pokémon para começar!</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
