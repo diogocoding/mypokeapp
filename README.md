@@ -7,7 +7,7 @@ Utilizando a [PokéAPI](https://pokeapi.co/), esta aplicação permite que você
 
 ## 📸 Tela da Aplicação
 
-![Demonstração do Buscador de Pokémon](https://i.postimg.cc/zD4xrf68/Capturar.png)
+![Demonstração do Buscador de Pokémon](https://i.postimg.cc/DZZx247y/pokebuscador.png)
 
 ## ✨ Funcionalidades
 
