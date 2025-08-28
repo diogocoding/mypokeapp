@@ -57,7 +57,7 @@ Requisitos:
 
 Você pode acessar a versão ao vivo do projeto aqui:
 
-👉 **[Buscador de Pokémon - Live Demo]([SEU_LINK_DO_NETLIFY_AQUI])**
+👉 **[Buscador de Pokémon - Live Demo]([https://pokeappbydiogocoding.netlify.app/])**
 
 ## 👋 Autor
 
